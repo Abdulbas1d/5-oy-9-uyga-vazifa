@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: aqua;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-left: 550px;
+}
+
+#loaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    user-select: none;
+
+    #loader {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.logo {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+
+    h1 {
+        font-size: 50px;
+        word-spacing: 5px;
+        margin-left: 48px;
+    }
+
+    .fa-pencil {
+        font-size: 35px;
+        margin-top: 19px;
+    }
+}
+
+.form {
+    display: flex;
+
+    form input {
+        width: 360px;
+        height: 45px;
+        padding-left: 15px;
+        border: none;
+        border-radius: 18px;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        color: rgb(100, 100, 254);
+        border: 3px solid rgb(100, 100, 254);
+    }
+
+    form #btn {
+        width: 80px;
+        height: 45px;
+        border: none;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: relative;
+        right: 19px;
+        background-color: rgb(100, 100, 254);
+        color: rgb(255, 237, 237);
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    #btn:hover {
+        color: rgb(100, 100, 254);
+        border: 3px solid rgb(100, 100, 254);
+        font-size: 19px;
+        background-color: #fff;
+    }
+}
+
+.text {
+    margin-top: 15px;
+    margin-left: 60px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+#datas {
+    width: 360px;
+
+    #form {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 380px;
+        height: 40px;
+        background-color: #fff;
+        margin-left: 20px;
+        border-radius: 12px;
+        padding: 6px;
+    
+        p {
+            padding-left: 5px;
+            color: green;
+        }
+    
+        span {
+            padding-right: 5px;
+            color: blue;
+            cursor: pointer;
+        }
+
+        span:hover {
+            color: red;
+        }
+    }
+}
